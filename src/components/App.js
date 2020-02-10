@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/App.css';
+import '../styles/App.scss';
 import { fetchRecipe, fetchSingleRecipe } from '../services/api';
 import List from './List';
 import Search from './Search';

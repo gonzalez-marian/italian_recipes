@@ -8,10 +8,10 @@ const List = props => {
             <ul className="list">
                 {props.allRecipes
                     .filter(recipe => props.value === '' || recipe.strMeal.toLowerCase().includes(props.value.toLowerCase()))
-                    .map(recipe => <li className="item__list" key={recipe.idMeal}>
+                    .map(recipe => <li className="list__item" key={recipe.idMeal}>
                         <Link
                             to={`/recipe/${recipe.idMeal}`}
-                            className="recipe__btn">
+                            className="list__button">
                             <Recipe
                                 mealImage={recipe.strMealThumb}
                                 mealName={recipe.strMeal}
